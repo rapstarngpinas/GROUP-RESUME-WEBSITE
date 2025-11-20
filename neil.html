@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neil O. Latagan - Resume</title>
+  <style>
+    /* === Reset & Base === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      color: #222;
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-color: #add8e6; /* Light blue background */
+    }
+
+    h1, h2 {
+      color: #24305e;
+    }
+
+    /* === Header === */
+    header {
+      background: #24305e; /* Solid header color */
+      text-align: center;
+      color: white;
+      padding: 60px 20px 80px;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      color: white; /* Title text in white */
+      animation: fadeUp 1s ease forwards;
+    }
+
+    header h3 {
+      font-weight: 400;
+      font-size: 1.1em;
+      opacity: 0.9;
+      color: white; /* Subtitle also white */
+      animation: fadeUp 1.5s ease forwards;
+    }
+
+    header img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-top: 25px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      animation: fadeUp 2s ease forwards;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+    }
+
+    /* === Navigation === */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 12px 0;
+    }
+
+    nav a {
+      margin: 0 25px;
+      text-decoration: none;
+      color: #24305e;
+      font-weight: 600;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #24305e;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #111;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* === Section Styling === */
+    section {
+      width: 85%;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      transform: translateY(50px);
+      opacity: 0;
+      animation: fadeUp 1s ease forwards;
+      background: rgba(255, 255, 255, 0.9);
+      color: #111;
+    }
+
+    section:nth-child(even) {
+      background: rgba(224, 238, 255, 0.9);
+    }
+
+    section h2 {
+      border-left: 5px solid #40598f;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      color: #24305e;
+    }
+
+    ul {
+      list-style: square;
+      margin-left: 20px;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    a {
+      color: #004aad;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #001f5b;
+    }
+
+    /* === Back Button === */
+    .back-btn {
+      background: #24305e;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(36,48,94,0.3);
+    }
+
+    .back-btn:hover {
+      background: #3f528c;
+      transform: scale(1.08);
+      box-shadow: 0 6px 15px rgba(36,48,94,0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #555;
+      font-size: 0.9em;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(5px);
+    }
+
+    /* === Animations === */
+    @keyframes fadeUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* === Responsive === */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2em; }
+      header h3 { font-size: 0.95em; }
+      section { width: 90%; padding: 20px; }
+      nav a { margin: 0 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>NEIL O. LATAGAN</h1>
+    <h3>Turning Code Into Real World Solutions</h3>
+    <img src="/image/neil.jpeg" alt="Profile picture of Neil O. Latagan">
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am <b>Neil O. Latagan</b>, 19 years old, born on November 20, 2005. I am currently a second-year college student at <b>Colegio De Montalban</b>, pursuing a Bachelor of Science in Information Technology. I am passionate about learning modern technologies and creating real-world solutions through programming and design.</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><b>College:</b> Colegio De Montalban — Bachelor of Science in Information Technology (2024 - Present)</li>
+      <li><b>Senior High:</b> College of Arts and Sciences of Asia and the Pacific (2022 - 2024)</li>
+      <li><b>Junior High:</b> Manito National High School (2018 - 2022)</li>
+      <li><b>Elementary:</b> Manito Central School (2012 - 2018)</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & Semantic Web Design</li>
+      <li>Basic Graphic Design</li>
+      <li>Strong Work Ethic</li>
+      <li>Problem-Solving</li>
+      <li>Adaptability & Continuous Learning</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:lataganneil179@gmail.com">lataganneil179@gmail.com</a></p>
+    <p>Phone: <a href="tel:+639666681370">+63 966 668 1370</a></p>
+    <p>GitHub: <a href="https://github.com/lataganneil179-arch" target="_blank">github.com/lataganneil179-arch</a></p>
+  </section>
+
+  <!-- Back Button -->
+  <div align="center" style="margin:30px;">
+    <a href="my home page.html"><button class="back-btn">⬅ Back to Home</button></a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Neil O. Latagan. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
